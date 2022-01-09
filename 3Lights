@@ -1,0 +1,40 @@
+int LED1 = 9;               //Set up Pin 9 light
+int LED2 = 10;              //Set up Pin 9 light
+int LED3 = 11;              //Set up Pin 9 light
+
+int Maindelay = 100;          //Set delay value
+void setup() {
+  // put your setup code here, to run once:
+
+  
+  pinMode(LED1, OUTPUT);       //Set digital pin 9 as an output
+  pinMode(LED2, OUTPUT);       //Set digital pin 10 as an output
+  pinMode(LED3, OUTPUT);       //Set digital pin 11 as an output
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+
+  //int intTemp = int(random(1, 13));
+  
+    digitalWrite(LED1, HIGH);
+    //delay(Maindelay);
+    delay(random(100, 1500));
+      
+    digitalWrite(LED1, LOW);
+      //delay(Maindelay);
+     delay(random(100, 1500)); 
+    digitalWrite(LED2, HIGH);
+     //delay(Maindelay);
+     delay(random(100, 1500)); 
+    digitalWrite(LED2, LOW);
+    //delay(Maindelay);
+     delay(random(100, 1500)); 
+    digitalWrite(LED3, HIGH);
+     //delay(Maindelay);
+     delay(random(100, 1500)); 
+    digitalWrite(LED3, LOW);
+     //delay(Maindelay);
+     delay(random(100, 1500)); 
+}
